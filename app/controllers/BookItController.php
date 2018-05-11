@@ -57,7 +57,7 @@ class BookItController extends AppController
 
             $accessToken = $client->refreshToken($refresh_token);
 
-            $client->setAccessToken($accessToken);
+            //$client->setAccessToken($accessToken);
 
             $service = new \Google_Service_Calendar($client);
 
